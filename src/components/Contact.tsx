@@ -1,29 +1,40 @@
-import React, { useState } from 'react';
-import { Mail, Phone, MapPin, Github, Linkedin, Twitter, Send, CheckCircle } from 'lucide-react';
+import React, { useState } from "react";
+import {
+  Mail,
+  Phone,
+  MapPin,
+  Github,
+  Linkedin,
+  Twitter,
+  Send,
+  CheckCircle,
+} from "lucide-react";
 
 const Contact: React.FC = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    message: '',
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
   });
   const [isSubmitted, setIsSubmitted] = useState(false);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // Simulate form submission
-    console.log('Form submitted:', formData);
+    console.log("Form submitted:", formData);
     setIsSubmitted(true);
-    
+
     // Reset form after 3 seconds
     setTimeout(() => {
       setIsSubmitted(false);
-      setFormData({ name: '', email: '', subject: '', message: '' });
+      setFormData({ name: "", email: "", subject: "", message: "" });
     }, 3000);
   };
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value,
@@ -33,42 +44,42 @@ const Contact: React.FC = () => {
   const contactInfo = [
     {
       icon: Mail,
-      label: 'Email',
-      value: 'alex.rodriguez@example.com',
-      link: 'mailto:alex.rodriguez@example.com',
+      label: "Email",
+      value: "ragulnamachivayam@gmail.com",
+      link: "mailto:ragulnamachivayam@gmail.com",
     },
     {
       icon: Phone,
-      label: 'Phone',
-      value: '+1 (555) 123-4567',
-      link: 'tel:+15551234567',
+      label: "Phone",
+      value: "+91 80129 31379",
+      link: "tel:+918012931379",
     },
     {
       icon: MapPin,
-      label: 'Location',
-      value: 'San Francisco, CA',
-      link: 'https://maps.google.com/?q=San+Francisco,+CA',
+      label: "Location",
+      value: "Chennai",
+      link: "https://maps.google.com/?q=Chennai,+Tamil+Nadu,+India",
     },
   ];
 
   const socialLinks = [
     {
       icon: Github,
-      label: 'GitHub',
-      url: 'https://github.com/alexrodriguez',
-      color: 'hover:text-gray-300',
+      label: "GitHub",
+      url: "https://github.com/ragulunive",
+      color: "hover:text-gray-300",
     },
     {
       icon: Linkedin,
-      label: 'LinkedIn',
-      url: 'https://linkedin.com/in/alexrodriguez',
-      color: 'hover:text-blue-400',
+      label: "LinkedIn",
+      url: "https://www.linkedin.com/in/ragul-n-783b25146",
+      color: "hover:text-blue-400",
     },
     {
       icon: Twitter,
-      label: 'Twitter',
-      url: 'https://twitter.com/alexrodriguez',
-      color: 'hover:text-blue-400',
+      label: "Twitter",
+      url: "",
+      color: "hover:text-blue-400",
     },
   ];
 
@@ -80,7 +91,8 @@ const Contact: React.FC = () => {
             Get In Touch
           </h2>
           <p className="text-slate-400 text-lg max-w-2xl mx-auto">
-            Ready to discuss your next project or explore opportunities? Let's connect and build something amazing together.
+            Ready to discuss your next project or explore opportunities? Let's
+            connect and build something amazing together.
           </p>
         </div>
 
@@ -92,9 +104,10 @@ const Contact: React.FC = () => {
                 Let's Start a Conversation
               </h3>
               <p className="text-slate-300 text-lg leading-relaxed mb-8">
-                I'm always interested in hearing about new opportunities, challenging projects, 
-                or just discussing the latest in backend development. Whether you're looking 
-                for a senior developer to join your team or need consultation on your technical 
+                I'm always interested in hearing about new opportunities,
+                challenging projects, or just discussing the latest in backend
+                development. Whether you're looking for a senior developer to
+                join your team or need consultation on your technical
                 architecture, I'd love to hear from you.
               </p>
             </div>
@@ -151,14 +164,18 @@ const Contact: React.FC = () => {
                   Message Sent Successfully!
                 </h4>
                 <p className="text-slate-400">
-                  Thank you for reaching out. I'll get back to you as soon as possible.
+                  Thank you for reaching out. I'll get back to you as soon as
+                  possible.
                 </p>
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
-                    <label htmlFor="name" className="block text-sm font-medium text-slate-300 mb-2">
+                    <label
+                      htmlFor="name"
+                      className="block text-sm font-medium text-slate-300 mb-2"
+                    >
                       Full Name
                     </label>
                     <input
@@ -173,7 +190,10 @@ const Contact: React.FC = () => {
                     />
                   </div>
                   <div>
-                    <label htmlFor="email" className="block text-sm font-medium text-slate-300 mb-2">
+                    <label
+                      htmlFor="email"
+                      className="block text-sm font-medium text-slate-300 mb-2"
+                    >
                       Email Address
                     </label>
                     <input
@@ -190,7 +210,10 @@ const Contact: React.FC = () => {
                 </div>
 
                 <div>
-                  <label htmlFor="subject" className="block text-sm font-medium text-slate-300 mb-2">
+                  <label
+                    htmlFor="subject"
+                    className="block text-sm font-medium text-slate-300 mb-2"
+                  >
                     Subject
                   </label>
                   <input
@@ -206,7 +229,10 @@ const Contact: React.FC = () => {
                 </div>
 
                 <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-slate-300 mb-2">
+                  <label
+                    htmlFor="message"
+                    className="block text-sm font-medium text-slate-300 mb-2"
+                  >
                     Message
                   </label>
                   <textarea

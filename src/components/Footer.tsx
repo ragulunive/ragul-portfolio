@@ -1,5 +1,5 @@
-import React from 'react';
-import { Code2, Heart } from 'lucide-react';
+import React from "react";
+import { Code2, Heart } from "lucide-react";
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
@@ -10,7 +10,9 @@ const Footer: React.FC = () => {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="flex items-center space-x-2 mb-4 md:mb-0">
             <Code2 className="h-6 w-6 text-blue-500" />
-            <span className="text-xl font-bold text-white">Alex Rodriguez</span>
+            <span className="text-xl font-bold text-white">
+              Ragul Namachivayam
+            </span>
           </div>
 
           <div className="flex items-center text-slate-400 text-sm">
@@ -20,13 +22,14 @@ const Footer: React.FC = () => {
           </div>
 
           <div className="text-slate-400 text-sm mt-4 md:mt-0">
-            © {currentYear} Alex Rodriguez. All rights reserved.
+            © {currentYear} Ragul Namachivayam. All rights reserved.
           </div>
         </div>
 
         <div className="mt-8 pt-8 border-t border-slate-700 text-center">
           <p className="text-slate-400 text-sm">
-            Passionate about building scalable backend systems that power the future of technology.
+            Passionate about building scalable backend systems that power the
+            future of technology.
           </p>
         </div>
       </div>

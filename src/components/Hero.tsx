@@ -6,9 +6,8 @@ const Hero: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const roles = [
     "Backend Developer",
-    "API Architect",
-    "Cloud Engineer",
-    "DevOps Enthusiast",
+    "Database Administrator",
+    "SSRS Developer",
   ];
 
   useEffect(() => {
@@ -55,7 +54,7 @@ const Hero: React.FC = () => {
         <div className="space-y-8">
           <div className="space-y-4">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white">
-              Hi, I'm <span className="text-blue-500">Alex Rodriguez</span>
+              Hi, I'm <span className="text-blue-500">Ragul Namachivayam</span>
             </h1>
             <div className="text-xl sm:text-2xl lg:text-3xl text-gray-300 h-10">
               <span className="text-blue-500">{typedText}</span>
@@ -64,28 +63,23 @@ const Hero: React.FC = () => {
           </div>
 
           <p className="text-lg sm:text-xl text-slate-400 max-w-3xl mx-auto leading-relaxed">
-            Passionate backend developer with 5+ years of experience building
+            Passionate backend developer with 2+ years of experience building
             scalable, high-performance systems. Specialized in microservices
             architecture, cloud infrastructure, and API development that powers
             millions of users.
           </p>
 
           <div className="flex flex-wrap justify-center gap-4 text-sm sm:text-base">
-            {[
-              "Node.js",
-              "Python",
-              "AWS",
-              "Docker",
-              "PostgreSQL",
-              "GraphQL",
-            ].map((tech) => (
-              <span
-                key={tech}
-                className="px-4 py-2 bg-slate-800 text-blue-500 rounded-full border border-slate-600"
-              >
-                {tech}
-              </span>
-            ))}
+            {["Node.js", "Python", "AWS", "Javascript", "MySQL", "SSRS"].map(
+              (tech) => (
+                <span
+                  key={tech}
+                  className="px-4 py-2 bg-slate-800 text-blue-500 rounded-full border border-slate-600"
+                >
+                  {tech}
+                </span>
+              )
+            )}
           </div>
 
           <div className="flex justify-center space-x-6">
@@ -104,7 +98,7 @@ const Hero: React.FC = () => {
               <Linkedin className="h-6 w-6" />
             </a>
             <a
-              href="mailto:alex@example.com"
+              href="mailto:ragulnamachivayam@gmail.com"
               className="p-3 bg-slate-800 text-slate-300 rounded-full hover:bg-slate-700 hover:text-white transition-all duration-200"
               aria-label="Email Contact"
             >
