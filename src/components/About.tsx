@@ -1,27 +1,27 @@
-import React from 'react';
-import { Award, Users, Clock, TrendingUp } from 'lucide-react';
+import React from "react";
+import { Award, Users, Clock, TrendingUp } from "lucide-react";
 
 const About: React.FC = () => {
   const achievements = [
     {
       icon: Award,
-      value: '50+',
-      label: 'Projects Delivered',
+      value: "3+",
+      label: "Projects Worked",
     },
     {
       icon: Users,
-      value: '10M+',
-      label: 'Users Served',
+      value: "30+",
+      label: "Clients Served",
     },
     {
       icon: Clock,
-      value: '5+',
-      label: 'Years Experience',
+      value: "3+",
+      label: "Years Experience",
     },
     {
       icon: TrendingUp,
-      value: '99.9%',
-      label: 'System Uptime',
+      value: "99.9%",
+      label: "System Uptime",
     },
   ];
 
@@ -33,7 +33,8 @@ const About: React.FC = () => {
             About Me
           </h2>
           <p className="text-slate-400 text-lg max-w-2xl mx-auto">
-            Building robust backend systems that scale and perform under pressure
+            Building robust backend systems that scale and perform under
+            pressure
           </p>
         </div>
 
@@ -41,34 +42,38 @@ const About: React.FC = () => {
           <div className="space-y-6">
             <div className="prose prose-invert max-w-none">
               <p className="text-slate-300 text-lg leading-relaxed">
-                I'm a passionate backend developer who thrives on solving complex technical challenges. 
-                With over 5 years of experience in building distributed systems, I've had the privilege 
-                of working with startups and enterprise companies to architect solutions that scale 
-                from thousands to millions of users.
+                I'm a passionate backend developer who thrives on solving
+                complex technical challenges. With over 3 years of experience in
+                building distributed systems, I've had the privilege of working
+                with startups and enterprise companies to architect solutions
+                that scale from thousands to millions of users.
               </p>
               <p className="text-slate-300 text-lg leading-relaxed">
-                My expertise lies in designing microservices architectures, optimizing database 
-                performance, and implementing robust APIs that form the backbone of modern applications. 
-                I'm particularly passionate about cloud-native development, DevOps practices, and 
-                building systems that are not just functional, but maintainable and efficient.
+                My expertise lies in designing microservices architectures,
+                optimizing database performance, and implementing robust APIs
+                that form the backbone of modern applications. I'm particularly
+                passionate about cloud-native development, DevOps practices, and
+                building systems that are not just functional, but maintainable
+                and efficient.
               </p>
               <p className="text-slate-300 text-lg leading-relaxed">
-                When I'm not coding, you'll find me contributing to open-source projects, writing 
-                technical blogs, or mentoring junior developers. I believe in continuous learning 
-                and staying up-to-date with the latest industry trends and technologies.
+                When I'm not coding, you'll find me contributing to open-source
+                projects, writing technical blogs, or mentoring junior
+                developers. I believe in continuous learning and staying
+                up-to-date with the latest industry trends and technologies.
               </p>
             </div>
 
             <div className="flex flex-wrap gap-3">
               {[
-                'System Architecture',
-                'API Design',
-                'Database Optimization',
-                'Cloud Infrastructure',
-                'DevOps',
-                'Microservices',
-                'Performance Tuning',
-                'Security',
+                "System Architecture",
+                "API Design",
+                "Database Optimization",
+                "Cloud Infrastructure",
+                "DevOps",
+                "Microservices",
+                "Performance Tuning",
+                "Security",
               ].map((skill) => (
                 <span
                   key={skill}

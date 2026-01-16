@@ -53,7 +53,7 @@ const Hero: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="space-y-8">
           <div className="space-y-4">
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white">
+            <h1 className="mt-12 text-4xl sm:text-5xl lg:text-6xl font-bold text-white">
               Hi, I'm <span className="text-blue-500">Ragul Namachivayam</span>
             </h1>
             <div className="text-xl sm:text-2xl lg:text-3xl text-gray-300 h-10">
